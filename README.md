@@ -6,7 +6,5 @@ Running application:
 4. java -jar stego-0.0.1-SNAPSHOT-jfx.jar 
 
 
-Author: Sandra Lewandowska (https://sandralewandowska.pl)
-Source:
-
-Licence
+Author: Sandra Lewandowska
+Source: https://github.com/sanlew/st3g0
