@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="545.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.stego.controller.Step2Controller">
+   <children>
+      <Pane layoutX="-6.0" layoutY="31.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="-31.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="31.0">
+         <children>
+            <Button fx:id="chooseSecretFileButton" layoutX="426.0" layoutY="57.0" mnemonicParsing="false" onAction="#importFile" prefHeight="52.0" prefWidth="156.0" text="Select file" visible="false" />
+            <TextArea fx:id="encryptTextArea" layoutX="233.0" layoutY="145.0" prefHeight="159.0" prefWidth="546.0" />
+            <Label layoutX="36.0" layoutY="-23.0" prefHeight="81.0" prefWidth="530.0" text="Step 2. Data to hide" />
+            <Label fx:id="encryptLabel" layoutX="59.0" layoutY="159.0" prefHeight="92.0" prefWidth="156.0" text="Write here the message to hide." textOverrun="CLIP" wrapText="true" />
+            <RadioButton fx:id="secretTextRadioButton" layoutX="176.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickRadioButton" selected="true" text="Text" />
+            <RadioButton fx:id="secretFileRadioButton" layoutX="320.0" layoutY="74.0" mnemonicParsing="false" onAction="#clickRadioButton" selected="false" text="File" />
+            <Label fx:id="pathLabel" layoutX="307.0" layoutY="109.0" prefHeight="52.0" prefWidth="470.0" text="" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
